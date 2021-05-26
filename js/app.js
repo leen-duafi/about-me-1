@@ -17,7 +17,7 @@ switch (age.toUpperCase()) {
     case 'NO':
     case 'N':
         alert('I hate you already');
-//console.log('I hate you already')
+        //console.log('I hate you already')
         break;
 
     default:
@@ -37,57 +37,83 @@ switch (food.toLowerCase()) {
     case 'no':
     case 'n':
         alert('That is not correct, everybody loves Dwali')
-        //console.log('That is not correct, everybody loves Dwali')
+    //console.log('That is not correct, everybody loves Dwali')
     default:
         break;
 }
 
-let work=prompt('Do you feel like I am professional?');
-work= work.toLowerCase();
+let work = prompt('Do you feel like I am professional?');
+work = work.toLowerCase();
 
 if (work == 'yes' || work == 'y') {
     alert('Thank you, I am really happy that you think that');
     //console.log('Thank you, I am really happy that you think that')
 }
 
-    else if (work == 'no' || work == 'n') {
-        alert('I will try to improve');
-        //console.log('I will try to improve')
-    }
+else if (work == 'no' || work == 'n') {
+    alert('I will try to improve');
+    //console.log('I will try to improve')
+}
 
-    let sleep= prompt('Do you think I am a morning person? ');
+let sleep = prompt('Do you think I am a morning person? ');
 
-    switch (sleep.toLowerCase()) {
-        case 'yes':
-        case 'y':
-            alert('No, I am a night owl');
-            //console.log('No, I am a night owl')
-            break;
-    
-        case 'no':
-        case 'n':
-            alert('you are correct, I am a night owl')
-            //console.log('you are correct, I am a night owl')
-        default:
-            break;
-    } 
+switch (sleep.toLowerCase()) {
+    case 'yes':
+    case 'y':
+        alert('No, I am a night owl');
+        //console.log('No, I am a night owl')
+        break;
 
-    let animal= prompt('Do you think I like dogs? ');
+    case 'no':
+    case 'n':
+        alert('you are correct, I am a night owl')
+    //console.log('you are correct, I am a night owl')
+    default:
+        break;
+}
 
-    switch (animal.toUpperCase()) {
-        case 'YES':
-        case 'Y':
-            alert('No ,actually I am more into cats');
-            //console.log('No ,actually I am more into cats')
-            break;
-    
-        case 'NO':
-        case 'N':
-            alert('That is correct, cats are way better')
-           // console.log('That is correct, cats are way better')
-        default:
-            break;
-    }
+let animal = prompt('Do you think I like dogs? ');
+
+switch (animal.toUpperCase()) {
+    case 'YES':
+    case 'Y':
+        alert('No ,actually I am more into cats');
+        //console.log('No ,actually I am more into cats')
+        break;
+
+    case 'NO':
+    case 'N':
+        alert('That is correct, cats are way better')
+    // console.log('That is correct, cats are way better')
+    default:
+        break;
+}
 alert(' Thank you ' + userName + ' for you time ');
 
+
+
+let old=20
+
+let guessedold=prompt('How old do you think i am?')
+
+
+for (let i = 0 ; i<4; i++) {
+    if (guessedold===old) {
+        alert('That is right good job')
+        
+    }
+    if else (guessedold<old)
+        alert ('too low, try again')
+    }
+    if else (guessedold>old) {
+         
+        alert('too high')
+    } else {
+        alert('enter a number please')
+    }
+    if (i===3){
+        alert('My age is actually 20')
+    }
+
+}
 
