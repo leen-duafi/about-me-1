@@ -5,7 +5,8 @@ let userName = prompt('Hello what is your name?');
 alert(' Hello ' + userName + 'have a nice day')
 //console.log(userName)
 
-let age = prompt('Do i look young?')
+function age () {
+    let age = prompt('Do i look young?')
 
 switch (age.toUpperCase()) {
     case 'YES':
@@ -23,7 +24,11 @@ switch (age.toUpperCase()) {
     default:
         alert('Please answer with yes or no');
         break;
-}
+} }
+
+ age ();
+
+function food (){
 
 let food = prompt('Is Dwali my favourite meal? ');
 
@@ -40,7 +45,12 @@ switch (food.toLowerCase()) {
         //console.log('That is not correct, everybody loves Dwali')
     default:
         break;
-}
+}}
+
+
+ food ();
+
+function work (){
 
 let work=prompt('Do you feel like I am professional?');
 work= work.toLowerCase();
@@ -53,8 +63,9 @@ if (work == 'yes' || work == 'y') {
     else if (work == 'no' || work == 'n') {
         alert('I will try to improve');
         //console.log('I will try to improve')
-    }
-
+    } }
+  work ();
+ function sleep () {
     let sleep= prompt('Do you think I am a morning person? ');
 
     switch (sleep.toLowerCase()) {
@@ -70,7 +81,11 @@ if (work == 'yes' || work == 'y') {
             //console.log('you are correct, I am a night owl')
         default:
             break;
-    } 
+    } }
+
+     sleep ();
+
+     function animal () {
 
     let animal= prompt('Do you think I like dogs? ');
 
@@ -87,7 +102,9 @@ if (work == 'yes' || work == 'y') {
            // console.log('That is correct, cats are way better')
         default:
             break;
-    }
+    } }
+
+     animal ()
 alert(' Thank you ' + userName + ' for you time ');
 
 
