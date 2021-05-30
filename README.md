@@ -1,6 +1,6 @@
 # about-me
 
-driver :
-navigator : raghad Abdelghani
+driver :leen 
+navigator : Raghad Abdelghani
 
 we worked togather in puting  function for each question 

@@ -1,10 +1,11 @@
-'use strict';
+/*'use strict';
 
 let userName = prompt('Hello what is your name?');
 
 alert(' Hello ' + userName + 'have a nice day');
 //console.log(userName)
 
+let score=0;
 // Question 1
 function askAge() {
     let age = prompt('Do i look young?');
@@ -13,6 +14,7 @@ function askAge() {
         case 'YES':
         case 'Y':
             alert('Thank you, I am in my twenties');
+            score++
             //console.log('Thank you, I am in my twenties')
             break;
 
@@ -39,6 +41,7 @@ function askFood() {
         case 'yes':
         case 'y':
             alert('That is true, isnt it deleicios?');
+            score++
             //console.log('That is true, isnt it deleicios?')
             break;
 
@@ -48,6 +51,7 @@ function askFood() {
         //console.log('That is not correct, everybody loves Dwali')
         break;
         default:
+            alert('Please answer with yes or no');
             break;
     }
 }
@@ -63,6 +67,7 @@ function askWork() {
 
     if (work === 'yes' || work === 'y') {
         alert('Thank you, I am really happy that you think that');
+        score++
         //console.log('Thank you, I am really happy that you think that')
     }
 
@@ -70,6 +75,7 @@ function askWork() {
         alert('I will try to improve');
         //console.log('I will try to improve')
     }
+    else {alert('Please answer with yes or no');}
 }
 
 askWork();
@@ -88,9 +94,11 @@ function askSleep() {
         case 'no':
         case 'n':
             alert('you are correct, I am a night owl');
+            score++
         //console.log('you are correct, I am a night owl')
         break;
         default:
+            alert('Please answer with yes or no');
             break;
     }
 }
@@ -111,9 +119,11 @@ function askAnimal() {
         case 'NO':
         case 'N':
             alert('That is correct, cats are way better');
+            score++;
         // console.log('That is correct, cats are way better')
         break;
         default:
+            alert('Please answer with yes or no');
             break;
     }
 }
@@ -133,6 +143,7 @@ let guessed=prompt('What is my IQ?');
 
 if (guessed===iq){
     alert('correct, good job');
+    score++;
     break;}
     else if (guessed>iq){
         alert('Too high');
@@ -164,6 +175,7 @@ hasAttempts:while (attempts){
         console.log(answers[i]);
         if(guessAnswer===answers[i]){
             alert('That is right, here are the rest of the answers ' +answers);
+            score++;
 break hasAttempts;
         }
     }
@@ -175,6 +187,6 @@ break hasAttempts;
 askFoods();
 
 
-
+alert('Your score is' +score);
 alert(' Thank you ' + userName + ' for you time ');
 
